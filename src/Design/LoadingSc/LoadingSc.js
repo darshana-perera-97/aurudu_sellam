@@ -3,8 +3,9 @@ import wall from "./wal.jpg";
 
 export default function LoadingSc() {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <img src={wall} alt="logo" width="100%"/>
+      <p id="com" style={{fontWeight:"bold",color:"blue"}}>Powered by DnD Creations</p>
     </div>
   );
 }
