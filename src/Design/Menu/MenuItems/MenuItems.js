@@ -39,7 +39,7 @@ export default function MenuItems() {
                   style={{ margin: "12px 0px" }}
                   onClick={() => {
                     setmenu(false);
-                    setgame(1);
+                    setgame(key+1);
                   }}
                 >
                   {val}
