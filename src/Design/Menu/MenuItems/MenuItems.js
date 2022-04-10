@@ -20,9 +20,9 @@ export default function MenuItems() {
   const [game, setgame] = React.useState(0);
   var games;
   if (game == "1") {
-    games = <Pancha />;
+    games = <Pancha p={"1"}/>;
   } else if (game == "2") {
-    games = <Amuththa />;
+    games = <Amuththa p={"2"}/>;
   }
   return (
     <div>
