@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import LoadingSc from "./LoadingSc/LoadingSc";
 
 export default function Design() {
   return (
-    <div>Design</div>
-  )
+    <div>
+      <LoadingSc />
+    </div>
+  );
 }
