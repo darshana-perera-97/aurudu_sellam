@@ -9,7 +9,7 @@ export default function Amuththa(p) {
   var o = Math.random();
   var t = Math.round(o * 5);
   var winner = false;
-  if (s == t) {
+  if (s === t) {
     winner = true;
   }
   return (

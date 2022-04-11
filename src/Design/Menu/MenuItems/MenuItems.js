@@ -6,6 +6,7 @@ import wall from "./ba.jpg";
 import { gameName } from "../../DataSheet";
 import Pancha from "./pancha/Pancha";
 import Amuththa from "./Amuththa/Amuththa";
+import Grease from "./Grease/Grease";
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(purple[500]),
@@ -19,10 +20,12 @@ export default function MenuItems() {
   const [menu, setmenu] = React.useState(true);
   const [game, setgame] = React.useState(0);
   var games;
-  if (game == "1") {
-    games = <Pancha p={"1"}/>;
-  } else if (game == "2") {
-    games = <Amuththa p={"2"}/>;
+  if (game === 1) {
+    games = <Pancha p={"1"} />;
+  } else if (game === 2) {
+    games = <Amuththa p={"2"} />;
+  } else if (game === 3) {
+    games = <Grease p={"3"}/>;
   }
   return (
     <div>
@@ -39,7 +42,7 @@ export default function MenuItems() {
                   style={{ margin: "12px 0px" }}
                   onClick={() => {
                     setmenu(false);
-                    setgame(key+1);
+                    setgame(key + 1);
                   }}
                 >
                   {val}

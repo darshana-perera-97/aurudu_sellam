@@ -25,6 +25,7 @@ export default function Pancha(p) {
   const [st2, setSt2] = React.useState(true);
   const [v1, setv1] = React.useState(0);
   const [v2, setv2] = React.useState(0);
+  const [v, setv] = React.useState(0);
   const [p1, setp1] = React.useState("Player 01");
   const [p2, setp2] = React.useState("Player 02");
   const [win, setWin] = React.useState("");
@@ -53,6 +54,7 @@ export default function Pancha(p) {
             var o = Math.random();
             setv1(v1 + o * 10);
             setSt(!st);
+            setv(Math.round(o * 10))
           }}
         >
           දාදු කැටය දමන්න
@@ -66,11 +68,15 @@ export default function Pancha(p) {
             var o = Math.random();
             setv2(v2 + o * 15);
             setSt(!st);
+            setv(Math.round(o * 10))
           }}
         >
           දාදු කැටය දමන්න
         </Button>
       )}
+      <p id="t2" style={{ fontWeight: "bold", color: "blue" }}>
+            {v}
+          </p>
       {st2 && (
         <div>
           <br />

@@ -1,5 +1,4 @@
 import React from "react";
-import StartButton from "./DesignComponents/StartButton";
 import LoadingSc from "./LoadingSc/LoadingSc";
 import Menu from "./Menu/Menu";
 import "./styleSheet.css";
@@ -20,8 +19,8 @@ export default function Design() {
   const [welcome, setwelcome] = React.useState(true);
   return (
     <div style={{ textAlign: "center", paddingBottom: "50px" }}>
-      {!welcome && <LoadingSc />}
-      {!welcome && (
+      {welcome && <LoadingSc />}
+      {welcome && (
         <ColorButton
           variant="contained"
           id="t2"
@@ -33,7 +32,7 @@ export default function Design() {
           {btnTxt}
         </ColorButton>
       )}
-      {welcome && <Menu />}
+      {!welcome && <Menu />}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 export const btnTxt = "අවුරුදු ජන ක්‍රීඩා සඳහා පිවිසෙන්න";
-export const gameName = ["පංචා දැමීම", "සැඟවුන අමුත්තා සෙවීම"];
+export const gameName = ["පංචා දැමීම", "සැඟවුන අමුත්තා සෙවීම","ග්‍රීස් ගසේ නැගීම"];
 export const pNames = [
   "සමන්",
   "කමල්",
