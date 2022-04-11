@@ -1,5 +1,5 @@
 import React from "react";
-import wall from "./wal.jpg";
+import wall from "./wall.jpg";
 
 export default function LoadingSc() {
   return (
